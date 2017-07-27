@@ -1,0 +1,154 @@
+.head {
+  /*登录注册模块*/
+  /*logo与广告模块*/
+  /*导航模块*/
+}
+.head .login_sign_box {
+  height: 30px;
+  width: 100%;
+  line-height: 30px;
+  text-align: right;
+  padding: 0 10px;
+}
+.head .login_sign_box span {
+  margin: 0 10px;
+}
+.head .logo_advertising:after {
+  content: "";
+  display: block;
+  height: 0;
+  clear: both;
+}
+.head .logo_advertising .logo_box img {
+  max-width: 100%;
+  max-height: 100%;
+}
+.head .logo_advertising .advertising_box img {
+  max-width: 100%;
+  max-height: 100%;
+}
+.head nav {
+  line-height: 40px;
+  height: 40px;
+  background: #BE0000;
+  position: relative;
+}
+.head nav .nav_nk {
+  width: 100%;
+  height: 100%;
+}
+.head nav .nav_son_box {
+  position: absolute;
+  left: 0;
+  top: 100%;
+  width: 100%;
+  border: 1px solid #ddd;
+  display: none;
+  background: #fff;
+}
+.head nav .nav_son_box .nav_one:after {
+  content: "";
+  display: block;
+  height: 0;
+  clear: both;
+}
+.head nav .nav_son_box .nav_one li {
+  float: left;
+  width: 20%;
+  text-align: center;
+}
+.head nav .nav_son_box .nav_two:after {
+  content: "";
+  display: block;
+  height: 0;
+  clear: both;
+}
+.head nav .nav_son_box .nav_two li {
+  float: left;
+  width: 20%;
+  text-align: center;
+}
+.head nav .nav_box li {
+  text-align: center;
+}
+.head nav .nav_box li a {
+  color: #fff;
+  font-weight: bold;
+  font-size: 16px;
+}
+@media screen and (min-width: 768px) {
+  nav .nav_box li {
+    width: 12.5%;
+    float: left;
+  }
+  nav .nav_btn {
+    display: none;
+  }
+  nav .nav_son_box .nav_one {
+    display: none;
+  }
+}
+@media screen and (max-width: 768px) {
+  .display_none {
+    display: none;
+  }
+  .display_block {
+    display: block;
+  }
+  /*logo与广告模块在手机端的样式*/
+  .logo_advertising {
+    text-align: center;
+  }
+  .advertising_box {
+    display: none;
+  }
+  .logo_box {
+    margin: 0 auto;
+  }
+  nav .nav_btn {
+    height: 40px;
+    padding-right: 5px;
+  }
+  nav .nav_btn i {
+    display: block;
+    width: 20px;
+    height: 2px;
+    background: #fff;
+    transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    /* Firefox 4 */
+    -webkit-transition: all 0.5s;
+    /* Safari 和 Chrome */
+    -o-transition: all 0.5s;
+    /* Opera */
+  }
+  nav .nav_btn i:first-child {
+    margin: 14px auto 10px;
+  }
+  nav .nav_btn i:first-child.active {
+    transform: rotate(45deg) translateY(8px);
+    -ms-transform: rotate(45deg) translateY(8px);
+    /* IE 9 */
+    -moz-transform: rotate(45deg) translateY(8px);
+    /* Firefox */
+    -webkit-transform: rotate(45deg) translateY(0px) translateX(8px);
+    /* Safari 和 Chrome */
+    -o-transform: rotate(45deg) translateY(8px);
+  }
+  nav .nav_btn i:last-child {
+    margin: 0 auto;
+  }
+  nav .nav_btn i:last-child.active {
+    transform: rotate(-45deg) translateY(-9px);
+    -ms-transform: rotate(-45deg) translateY(-9px);
+    /* IE 9 */
+    -moz-transform: rotate(-45deg) translateY(-9px);
+    /* Firefox */
+    -webkit-transform: rotate(-45deg) translateY(0px) translateX(8px);
+    /* Safari 和 Chrome */
+    -o-transform: rotate(-45deg) translateY(-9px);
+  }
+  nav .nav_son_box .nav_one {
+    border-bottom: 1px solid #ddd;
+  }
+}
