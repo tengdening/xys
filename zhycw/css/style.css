@@ -1,4 +1,5 @@
 .head {
+  margin-bottom: 20px;
   /*登录注册模块*/
   /*logo与广告模块*/
   /*导航模块*/
@@ -104,6 +105,7 @@
 .head .search_box {
   height: 40px;
   line-height: 40px;
+  background: #F0F0F0;
 }
 .head .search_box:after {
   content: "";
@@ -113,18 +115,19 @@
 }
 .head .search_box .left .text {
   width: 50%;
-  height: 30px;
+  height: 25px;
   border-radius: 3px;
   outline-style: none;
   border: 1px solid #999;
   padding-left: 5px;
 }
 .head .search_box .left select {
-  height: 30px;
+  height: 25px;
+  width: 30%;
   outline-style: none;
 }
 .head .search_box .left .search_botton {
-  height: 30px;
+  height: 25px;
   width: 50px;
   background: #fff;
   cursor: pointer;
@@ -142,19 +145,17 @@
     display: none;
   }
   /*搜索模块*/
-  .search_box .left,
-  .search_box .middle,
-  .search_box .right {
-    width: 33.33333333%;
-  }
-}
-@media screen and (min-width: 768px) and (max-width: 1000px) {
-  .search_box .left,
-  .search_box .middle {
+  .search_box .left {
     width: 50%;
   }
   .search_box .right {
-    display: none;
+    width: 50%;
+  }
+  .search_box .right a {
+    margin-left: 10px;
+  }
+  .search_box .right a:hover {
+    color: #BE0000;
   }
 }
 @media screen and (max-width: 768px) {
