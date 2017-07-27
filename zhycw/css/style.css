@@ -46,6 +46,9 @@
   display: none;
   background: #fff;
 }
+.head nav .nav_son_box .nav_one {
+  background: #BE0000;
+}
 .head nav .nav_son_box .nav_one:after {
   content: "";
   display: block;
@@ -54,8 +57,13 @@
 }
 .head nav .nav_son_box .nav_one li {
   float: left;
-  width: 20%;
+  width: 25%;
   text-align: center;
+}
+.head nav .nav_son_box .nav_one li a {
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
 }
 .head nav .nav_son_box .nav_two {
   position: relative;
@@ -63,7 +71,7 @@
 .head nav .nav_son_box .nav_two .nav_two_qx {
   position: absolute;
   right: 0;
-  top: 0;
+  bottom: 0;
   width: 20px;
   height: 20px;
   background: #f00;
