@@ -6,9 +6,9 @@
     line-height: 30px;
     text-align: right;
     padding: 0 10px;
-  }
-  .login_sign_box span{
-    margin: 0 10px;
+    span{
+      margin: 0 10px;
+    }
   }
   /*logo与广告模块*/
   .logo_advertising{
@@ -108,8 +108,41 @@
       }
     }
   }
+  /*搜索模块*/
+  .search_box{
+    height: 40px;
+    line-height: 40px;
+
+    &:after{
+      content: "";
+      display: block;
+      height: 0;
+      clear: both;
+    }
+    .left{
+      .text{
+        width: 50%;
+        height: 30px;
+        border-radius: 3px;
+        outline-style: none;
+        border: 1px solid #999;
+        padding-left: 5px;
+      }
+      select{
+        height: 30px;
+        outline-style: none;
+      }
+      .search_botton{
+        height: 30px;
+        width: 50px;
+        background: #fff;
+        cursor: pointer;
+      }
+    }
+  }
 }
 @media screen and(min-width: 768px){
+  /*导航pc效果*/
   nav{
     .nav_box{
       li{
@@ -126,6 +159,23 @@
         display: none;
       }
     }
+  }
+  /*搜索模块*/
+  .search_box{
+    .left,.middle,.right{
+      width: 33.33333333%;
+    }
+  }
+}
+@media screen and(min-width:768px) and(max-width:1000px){
+  .search_box{
+    .left,.middle{
+      width: 50%;
+    }
+    .right{
+      display: none;
+    }
+
   }
 }
 @media screen and(max-width: 768px) {
@@ -145,6 +195,7 @@
   .logo_box {
     margin: 0 auto;
   }
+  /*导航移动端效果*/
   nav{
     .nav_btn{
       height: 40px;
@@ -184,6 +235,13 @@
       .nav_one{
         border-bottom: 1px solid #ddd;
       }
+    }
+  }
+  /*搜索模块*/
+  .search_box{
+    padding: 0 10px;
+    .left{
+      width: 100%;
     }
   }
 }
