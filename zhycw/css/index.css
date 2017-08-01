@@ -195,11 +195,21 @@
 @media screen and (max-width: 768px) {
   .main > li {
     width: 100%;
+    padding: 0;
   }
 }
 @media screen and (max-width: 1000px) and (min-width: 768px) {
   .main > li {
     width: 50%;
+  }
+  .main > li:nth-child(1) {
+    padding-left: 0;
+  }
+  .main > li:nth-child(2) {
+    padding-right: 0;
+  }
+  .main > li:nth-child(3) {
+    padding-left: 0;
   }
   .main > li > .main_module .main_module_title.xs {
     display: none;
@@ -208,6 +218,12 @@
 @media screen and (min-width: 1000px) {
   .main > li {
     width: 33.33333%;
+  }
+  .main > li:nth-child(1) {
+    padding-left: 0;
+  }
+  .main > li:nth-child(3) {
+    padding-right: 0;
   }
   .main > li > .main_module .main_module_title.xs {
     display: none;

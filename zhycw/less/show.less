@@ -1,0 +1,45 @@
+/*列表页主体部分*/
+.main{
+  padding: 0 0 50px;
+  &:after{
+    content: "";
+    display: block;
+    height: 0;
+    clear: both;
+  }
+  .bubble_link{
+    font-size: 14px;
+    border-bottom: 1px solid #ddd;
+  }
+  .text_title{
+    text-align: center;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    margin: 50px auto 20px;
+    width: 80%;
+  }
+  .parameter{
+    border-bottom: 1px dashed #ddd;
+    text-align: center;
+    &>span{
+      margin-right: 20px;
+    }
+  }
+  .collect{
+    text-align: right;
+    a{
+      margin-right: 20px;
+    }
+  }
+  .content{
+    p{
+      line-height: 1.5;
+      margin: 10px 0;
+      padding: 0 10px;
+    }
+    img{
+      max-width: 100%;
+    }
+  }
+}

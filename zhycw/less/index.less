@@ -212,6 +212,7 @@
   .main{
     &>li{
       width: 100%;
+     padding: 0;
     }
   }
 }
@@ -219,6 +220,15 @@
   .main{
     &>li{
       width: 50%;
+      &:nth-child(1){
+        padding-left: 0;
+      }
+      &:nth-child(2){
+        padding-right: 0;
+      }
+      &:nth-child(3){
+        padding-left: 0;
+      }
       &>.main_module{
         .main_module_title{
           &.xs{
@@ -233,6 +243,12 @@
   .main{
     &>li{
       width: 33.33333%;
+      &:nth-child(1){
+        padding-left: 0;
+      }
+      &:nth-child(3){
+        padding-right: 0;
+      }
       &>.main_module{
         .main_module_title{
           &.xs{

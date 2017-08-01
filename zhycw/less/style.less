@@ -143,6 +143,42 @@
     }
   }
 }
+.foot_box{
+  margin-top: 10px;
+  .friendly_link{
+    line-height: 1.5;
+    padding: 10px 0;
+    &:after{
+      content: "";
+      display: block;
+      height: 0;
+      clear: both;
+    }
+    &>span{
+      //margin-right: 20px;
+    }
+    &>.link{
+      a{
+        margin: 0 10px;
+      }
+    }
+  }
+  .column_box{
+    text-align: center;
+    width: 100%;
+    &>span{
+      margin:0 10px;
+      color: #999;
+    }
+  }
+  .copy,.for_reference{
+    text-align: center;
+    padding: 10px 0;
+  }
+  .email{
+    text-align: center;
+  }
+}
 @media screen and(min-width: 768px){
   /*导航pc效果*/
   nav{
@@ -178,7 +214,7 @@
     }
   }
 }
-@media screen and(max-width: 768px) {
+@media screen and(max-width: 768px){
   .display_none{
     display: none;
   }
@@ -243,5 +279,8 @@
     .left{
       width: 100%;
     }
+  }
+  .friendly_link{
+    display: none;
   }
 }
